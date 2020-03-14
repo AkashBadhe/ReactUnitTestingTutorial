@@ -6,8 +6,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.4.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.17",
     "react-scripts": "3.4.0"
   },
   "scripts": {
@@ -29,6 +30,21 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest-cli": "^25.1.0",
+    "react-dom": "^16.13.0",
+    "react-test-renderer": "^16.13.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/tempPolyfills.js"
     ]
   }
 }
